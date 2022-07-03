@@ -1,15 +1,15 @@
 package wrapper;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.math.BigDecimal;
 @AllArgsConstructor
 public class Stock {
-    private String ticker;
-    private String name;
-    BigDecimal lastTradePrice; // "current price"
-    BigDecimal bid;
-    BigDecimal ask;
-
-
+    @Getter @Setter private String ticker;
+    @Getter @Setter private String name;
+    @Getter @Setter private BigDecimal lastTradePrice; // "current price"
+    @Getter @Setter private BigDecimal bid;
+    @Getter @Setter private BigDecimal ask;
 }
