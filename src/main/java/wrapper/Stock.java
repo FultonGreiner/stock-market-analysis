@@ -1,7 +1,9 @@
 package wrapper;
 
-import java.math.BigDecimal;
+import lombok.AllArgsConstructor;
 
+import java.math.BigDecimal;
+@AllArgsConstructor
 public class Stock {
     private String ticker;
     private String name;
@@ -9,11 +11,5 @@ public class Stock {
     BigDecimal bid;
     BigDecimal ask;
 
-    public Stock() {
-        // default constructor
-    }
 
-    public Stock(String ticker) {
-        this.ticker = ticker;
-    }
 }
